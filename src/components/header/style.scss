@@ -1,0 +1,130 @@
+.ant-layout-header {
+  height: 100% !important;
+  background: #fff !important;
+  line-height: 39px !important;
+}
+
+.header {
+  text-transform: capitalize;
+
+  .menu {
+    background-color: transparent;
+  }
+
+  .ant-layout-header {
+    background: transparent;
+  }
+
+  .ant-btn {
+    box-shadow: none;
+
+    &:hover {
+      color: #1b2739;
+    }
+
+    &:focus {
+      color: #1b2739;
+    }
+
+    &::after {
+      box-shadow: none !important;
+    }
+  }
+
+  .heading {
+    padding: 14px 0 13px 20px !important;
+    color: #1b2739 !important;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: text;
+    pointer-events: none;
+
+    &::after {
+      border: none !important;
+    }
+  }
+
+  .sub-menu {
+    display: flex;
+    position: absolute;
+    top: 14px;
+    right: 0;
+    justify-content: flex-end;
+    width: 50%;
+    border: none;
+    color: black;
+    text-decoration: none;
+
+    .ant-dropdown-link {
+      border: 0;
+      background: transparent;
+    }
+
+    .header-dropdown {
+      width: 180px;
+      border: 0 !important;
+    }
+
+    .header-dropdown-menu {
+      border: none !important;
+
+      &::after {
+        border: none !important;
+      }
+    }
+
+    .dash {
+      position: relative;
+      top: 7px;
+      right: 12px;
+      pointer-events: none;
+
+      p {
+        display: flex;
+        align-items: center;
+        width: 1px;
+        height: 27px;
+        border-radius: 1px;
+        background-color: #ebebf2;
+      }
+    }
+
+    .subMenu {
+      float: right;
+    }
+  }
+
+  .ant-menu-horizontal {
+    > .ant-menu-item {
+      border-bottom: none !important;
+    }
+
+    &:not(.ant-menu-dark) {
+      > .ant-menu-item-selected {
+        border: none !important;
+
+        &::after {
+          border: none !important;
+        }
+      }
+
+      .subMenu {
+        &:hover {
+          border-bottom: 2px solid black !important;
+          border-radius: 1.5px;
+          color: #1b2739;
+
+          &::after {
+            border-bottom: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-space-item {
+    button {
+      border: none !important;
+    }
+  }
+}

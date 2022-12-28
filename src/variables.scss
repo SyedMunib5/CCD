@@ -1,0 +1,56 @@
+// Colors
+$input-color: #f5f5f5;
+$default-blue: #406ce3;
+$default-text: #717171;
+
+// Radius
+$default-radius: 6px;
+
+$default-font-size: 12px;
+$subheading-font-size: 14px;
+$heading-font-size: 16px;
+$open-sans-font-family: 'Open Sans', sans-serif, 'Helvetica Neue', 'Segoe UI';
+
+@mixin boxContent($code) {
+  $color: '';
+
+  @if $code == 'info' {
+    $color: #f1f4fc;
+  }
+
+  @if $code == 'mastard' {
+    $color: #fdf9f8;
+  }
+
+  border-radius: 15px;
+  background-color: $color;
+  color: $default-text;
+  font-size: $default-font-size-mini;
+
+  p {
+    margin-bottom: 0;
+    padding: 5px 20px 4px 20px;
+    border-bottom: 1px solid #e6e9f1;
+  }
+
+  p:last-child {
+    border-bottom: 0;
+  }
+
+  span {
+    float: right;
+  }
+}
+
+@mixin inputStyle {
+  .form-control {
+    input {
+      border-radius: $default-radius;
+      border-color: $input-color;
+      opacity: 0.78;
+      background-color: $input-color;
+      color: #505050;
+      font-size: 14px;
+    }
+  }
+}

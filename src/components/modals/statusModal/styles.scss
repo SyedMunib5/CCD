@@ -1,0 +1,190 @@
+@import '~antd/dist/antd.css';
+@import 'variables.scss';
+
+.status-modal {
+  position: absolute;
+  z-index: 900;
+  width: 500px;
+  height: fit-content;
+  margin-left: 25%;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  color: rgba(0, 0, 0, 0.158);
+}
+
+.add-comment {
+  padding: 30px;
+  font-size: $heading-font-size;
+
+  .adjust-padding {
+    height: 30px;
+  }
+
+  .add-heading {
+    color: #1b2739;
+    font-size: $heading-font-size;
+    font-weight: bold;
+  }
+
+  .uplaod-attachment {
+    padding: 0 0 15px 0;
+    color: #4d4f5c;
+    font-size: $subheading-font-size;
+  }
+
+  .ant-upload-drag-icon {
+    .anticon {
+      color: black !important;
+    }
+  }
+
+  textarea.ant-input {
+    border-radius: 4px;
+    border-color: #dededf;
+    background: #fafafa !important;
+    font-size: $subheading-font-size !important;
+
+    &:hover {
+      border-color: #1b2739;
+    }
+  }
+
+  // .ant-form-item {
+  //   margin-bottom: 15px;
+  // }
+}
+
+.ant-select-focused {
+  .ant-select-selector {
+    border: 1px solid #1b2739 !important;
+    box-shadow: none !important;
+  }
+}
+
+.ant-select-the-input {
+  &:not(.ant-select-customize-input) {
+    .ant-select-selector {
+      width: 100%;
+      height: calc(1.5em + 0.75rem + 2px);
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      border-radius: 4px;
+      opacity: 0.78;
+      // background-color: #fff !important;
+      font-size: $default-font-size !important;
+      line-height: 1.5;
+      background-clip: padding-box;
+    }
+  }
+}
+
+.ant-select {
+  &:not(.ant-select-customize-input) {
+    .ant-select-selector {
+      border: 1px solid #d9d9d9;
+      border-radius: 4px !important;
+    }
+  }
+
+  &:not(.ant-select-disabled) {
+    &:hover {
+      .ant-select-selector {
+        border-right-width: 1px !important;
+        border-color: #1b2739;
+      }
+    }
+  }
+}
+
+.ant-modal.my-modal {
+  .ant-modal-content {
+    width: 60%;
+    min-height: 220px;
+    margin-bottom: 20px;
+    margin-left: 18%;
+    border-radius: 4px;
+    background-color: #ffff;
+  }
+}
+
+.ant-upload.ant-upload-drag {
+  border-radius: 4px;
+
+  p {
+    color: rgba(77, 79, 92, 0.6);
+    font-family: Lato, sans-serif;
+  }
+
+  .ant-upload-hint {
+    font-size: 16px !important;
+    word-spacing: 1px;
+
+    .upload {
+      color: #262626;
+    }
+  }
+
+  .upload-file-title {
+    color: rgba(77, 79, 92, 0.6);
+    font-size: $default-font-size;
+    word-spacing: 2px;
+  }
+
+  &:not(.ant-upload-disabled) {
+    &:hover {
+      border-color: #1b2739;
+    }
+  }
+}
+
+.comment-title {
+  padding: 0 0 15px 0;
+  color: #4d4f5c;
+}
+
+.adjust-btn {
+  padding-bottom: 20px;
+  // position: relative;
+  // left: 70%;
+  float: right;
+}
+
+.adjust-alert {
+  position: absolute;
+  top: -44px;
+  left: 41.5%;
+  padding: 20px;
+  border: double;
+  border-radius: 50%;
+  background-color: #4573f3;
+  color: white;
+  font-size: 65px;
+}
+
+.ant-btn-success {
+  width: 85px;
+  // margin-right: 10px;
+  border-radius: 6px !important;
+  border-color: #406ce3;
+  background-color: #406ce3;
+  box-shadow: none;
+  color: white;
+
+  &:hover {
+    border-color: transparent;
+    background-color: #406ce3;
+    color: white;
+  }
+
+  &:visited {
+    border-color: transparent;
+    background-color: #406ce3;
+    color: white;
+  }
+
+  &:focus {
+    border-color: transparent;
+    background-color: #406ce3;
+    color: white;
+  }
+}

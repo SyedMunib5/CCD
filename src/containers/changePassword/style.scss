@@ -1,0 +1,102 @@
+@import 'variables.scss';
+
+.change-password-container {
+  height: calc(100vh - 88px);
+  border: 1px solid #dededf;
+  border-radius: 4px;
+  background-color: #fff;
+
+  .changepassword {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 55px;
+
+    .title {
+      font-size: $heading-font-size;
+      font-weight: bold;
+      // padding-bottom: 15px;
+    }
+
+    .floatlabel {
+      position: relative;
+      margin: 5px 0 15px 0;
+
+      .labelfloat {
+        position: absolute;
+        top: 5px;
+        left: 12px;
+        transition: 0.2s ease all;
+        color: #1b2739 !important;
+        font-size: $default-font-size;
+        font-weight: normal;
+        pointer-events: none;
+      }
+
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+
+      .ant-input-affix-wrapper {
+        height: 55px;
+        // padding-top: 8px !important;
+        border: 1px solid #dededf !important;
+        background-color: white !important;
+        box-shadow: none !important;
+
+        &:hover {
+          border: 1px solid #1b2739 !important;
+          background-color: white !important;
+          box-shadow: none;
+        }
+
+        &:focus {
+          border: 1px solid #1b2739;
+          box-shadow: none;
+        }
+
+        .ant-input-suffix {
+          margin-right: 8px;
+          font-size: $heading-font-size;
+        }
+
+        .ant-input {
+          padding: 11px 0 0 9px;
+          background-color: white !important;
+          font-size: $heading-font-size !important;
+
+          &:-webkit-autofill {
+            height: 39px;
+            padding-top: 21px !important;
+            transition: background-color 5000s ease-in-out 0s;
+            border: none;
+            -webkit-box-shadow: 0 0 0 1000px white inset;
+            font-size: $heading-font-size !important;
+          }
+        }
+      }
+
+      .ant-form-item-children-icon {
+        padding-left: 9px !important;
+      }
+
+      .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+        z-index: 0 !important;
+      }
+
+      .ant-input-affix-wrapper-focused {
+        z-index: 0 !important;
+        border-color: #1b2739 !important;
+      }
+    }
+
+    .ant-btn-primary {
+      margin-top: 3px;
+      padding: 10px;
+      border: 1px solid #1b2739;
+      border-radius: 4px !important;
+      background-color: #1b2739;
+      cursor: pointer;
+    }
+  }
+}

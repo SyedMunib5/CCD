@@ -1,0 +1,129 @@
+.login-body {
+  min-height: 100vh;
+  background-image: url('../../images/login_background_image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .ant-row {
+    min-height: inherit;
+  }
+
+  .login-box-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 330px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+
+    .ant-image {
+      margin: 30px 30px 45px 30px;
+    }
+
+    .login-form {
+      width: 100%;
+      margin-top: 30px;
+
+      .invalid-cred {
+        margin: 0 0 10px 0;
+      }
+    }
+
+    .ant-form-item {
+      margin-bottom: 13px !important;
+    }
+
+    .login-input {
+      height: 50px;
+      border: 1px solid #dededf !important;
+      border-radius: 4px;
+      color: #4d4f5c !important;
+      font-family: Arial, Helvetica, sans-serif;
+
+      .ant-input {
+        &:not(:-webkit-autofill) {
+          height: 40px;
+          padding-top: 21px !important;
+          border: none;
+          border-color: transparent !important;
+          background-color: white !important;
+          box-shadow: none !important;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 0.832rem !important;
+        }
+
+        &:-webkit-autofill {
+          height: 40px;
+          padding-top: 21px !important;
+          transition: background-color 5000s ease-in-out 0s;
+          border: none;
+          -webkit-box-shadow: 0 0 0 1000px white inset;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 0.832rem !important;
+          -webkit-text-fill-color: #4d4f5c;
+
+          &:focus {
+            height: 40px;
+            padding-top: 21px !important;
+            transition: background-color 5000s ease-in-out 0s !important;
+            border: none;
+            -webkit-box-shadow: 0 0 0 1000px white inset !important;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.832rem !important;
+          }
+        }
+      }
+
+      .ant-input-affix-wrapper {
+        padding: 1px 12px 0 12px !important;
+        border: 0;
+        background-color: white !important;
+        box-shadow: none !important;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .ant-input-password-icon {
+        position: absolute;
+        top: 17px;
+        right: 10px;
+      }
+
+      .ant-input-suffix {
+        padding-right: 9px !important;
+        font-size: 16px;
+      }
+
+      .ant-input-affix-wrapper:hover {
+        z-index: 0 !important;
+        border: 0 !important;
+      }
+
+      .ant-input-affix-wrapper:not(:hover) {
+        z-index: 0 !important;
+      }
+
+      .ant-input-affix-wrapper:focus {
+        z-index: 0 !important;
+      }
+
+      &:hover {
+        border: 1px solid #1b2739 !important;
+      }
+    }
+
+    .login-btn {
+      margin-top: 15px;
+      margin-bottom: 12px;
+      padding: 11px 0 34px 0;
+      border: 1px solid #1b2739 !important;
+      border-radius: 4px !important;
+      background-color: #1b2739 !important;
+
+      &:hover {
+        background-color: #293445 !important;
+      }
+    }
+  }
+}

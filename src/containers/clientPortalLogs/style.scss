@@ -1,0 +1,19 @@
+@import 'variables.scss';
+
+.clients {
+  background-color: white;
+
+  .ant-badge-status-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .ant-badge-status-text {
+    color: #4d4f5c;
+    font-size: $default-font-size;
+  }
+
+  td .firstName {
+    padding-left: inherit;
+  }
+}

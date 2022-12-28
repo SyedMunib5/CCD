@@ -1,0 +1,17 @@
+@import 'variables.scss';
+
+.float-label {
+  position: relative;
+  margin-bottom: 12px;
+
+  .label {
+    position: absolute;
+    left: 12px;
+    font-size: 10px !important;
+  }
+
+  .label-float {
+    top: 5px;
+    color: #4d4f5c !important;
+  }
+}
